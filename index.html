@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library Storage</title>
+</head>
+<body>
+<h1><span>Library Storage Project</span></h1>
+    <div id='newBtn-Container'>
+        <button id="newBtn">+ Add New Book!</button>
+    </div>
+
+    <div id="popUp">
+        <form id="form" action="script.js">
+            <span class="close">&times;</span>
+            <legend>New Book:</legend>
+            <div id="textInput">
+                <p><input type="text" id="title" name="title" placeholder="Book Title"></p>
+                <p><input type="text" id="author" name="author" placeholder="Author"></p>
+                <p><input type="text" id="pages" name="pages" placeholder="Pages"></p>
+            </div>
+
+            <div id="checkBox">
+                <p><label>Read Before:   </label><input type="checkbox" id="read" name="read" value="yes"></p>
+            </div>
+
+            <button type="submit" form="form" id="addBtn">Add Book</button>
+        </form>
+    </div>
+
+    <div id="Library-container"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
