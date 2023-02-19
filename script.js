@@ -7,7 +7,7 @@ newBookBtn.addEventListener('click', () => popUpForm.style.display = 'block')
 
 const popUpForm = document.getElementById('popUp');
 
-//[0] is to get the first span element. Even if it only has one, still need to add.
+//[1] is to get the second span element. Even if it only has one span, still need to add.
 const closePopUp = document.getElementsByTagName('span')[1];
 closePopUp.addEventListener('click', () => popUpForm.style.display = 'none');
 
